@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Overflow Examples</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            border: 2px solid #333;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+        }
+        .overflow-visible {
+            overflow: visible;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .overflow-scroll {
+            overflow: scroll;
+        }
+        .overflow-auto {
+            overflow: auto;
+        }
+        .overflow-x-scroll {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .overflow-y-scroll {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Overflow Examples</h2>
+
+    <div class="container overflow-visible">
+        <strong>overflow: visible</strong><br>
+        This is some long content that will overflow the box and be visible outside the border. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div class="container overflow-hidden">
+        <strong>overflow: hidden</strong><br>
+        This is some long content that will overflow the box and be clipped. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div class="container overflow-scroll">
+        <strong>overflow: scroll</strong><br>
+        This is some long content that will overflow the box and scrollbars will always appear. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div class="container overflow-auto">
+        <strong>overflow: auto</strong><br>
+        This is some long content that will overflow the box and scrollbars will appear if needed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div class="container overflow-x-scroll">
+        <strong>overflow-x: scroll; overflow-y: hidden</strong><br>
+        This is some very long content that will overflow horizontally and show a horizontal scrollbar only. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div class="container overflow-y-scroll">
+        <strong>overflow-y: scroll; overflow-x: hidden</strong><br>
+        This is some very long content that will overflow vertically and show a vertical scrollbar only. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+</body>
+</html>

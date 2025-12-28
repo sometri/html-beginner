@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            background-color: #2c3e50; /* Dark Navy */
+            color: #fff; /* White Text */
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+            text-align: left;
+            padding: 10px;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer ul li {
+            margin: 10px 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        footer a:hover {
+            color: #ff6600; /* Highlight color */
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+        .social-media {
+            margin: 10px 0;
+        }
+        .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .social-media img {
+            width: 30px; /* Increased size */
+            height: 30px; /* Increased size */
+            border-radius: 50%; /* Circular icons */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .social-media a:hover img {
+            transform: scale(1.1); /* Zoom effect on icons */
+        }
+    </style>
+</head>
+<body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+                <p>Designed by MyWebsite Team</p>
+                <p>Stay updated with our latest news!</p>
+            </div>
+            <div class="footer-column">
+                <p>Quick Links</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p>Resources</p>
+                <ul>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p>Company</p>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p>Follow us on social media:</p>
+                <div class="social-media">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

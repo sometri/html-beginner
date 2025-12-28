@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition and Animation Example</title>
+    <style>
+        /* Transition Example */
+        .transition-box {
+            width: 100px;
+            height: 100px;
+            background: #3498db;
+            transition: background 0.5s, transform 0.5s;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            user-select: none;
+            text-align: center;            
+        }
+        .transition-box:hover {
+            background: #e74c3c;
+            transform: scale(1.2) rotate(10deg);
+            /* box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+            font-weight: bold; */
+        }
+
+        /* Animation Example */
+        .animation-box {
+            width: 100px;
+            height: 100px;
+            background: #2ecc71;
+            animation: moveBox 2s infinite alternate;
+        }
+        @keyframes moveBox {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Transition</h2>
+    <div class="transition-box">transition-box</div>
+
+    <h2>CSS Animation</h2>
+    <div class="animation-box">animation-box</div>
+</body>
+</html>

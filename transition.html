@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition Example</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background: #3498db;
+            transition: background 0.5s, transform 0.5s;
+            margin: 50px auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .box:hover {
+            background: #e74c3c;
+            transform: scale(1.15) rotate(5deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hover me!</div>
+</body>
+</html>

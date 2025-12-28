@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            color: #ff6600;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+            position: relative;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px;
+        }
+        .sidebar a:hover {
+            color: #ff6600;
+        }
+        .dropdown {
+            display: none;
+            background-color: #34495e;
+            padding-left: 15px;
+        }
+        .dropdown a {
+            padding: 8px 20px;
+        }
+        .sidebar ul li:hover > .dropdown {
+            display: block;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            flex: 1;
+        }
+        .header {
+            background-color: #34495e;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>University Dashboard</h2>
+        <ul>
+            <li><a href="#" onclick="showContent('overview')">Overview</a></li>
+            <li><a href="#">Academics</a>
+                <ul class="dropdown">
+                    <li><a href="#">Undergraduate Programs</a></li>
+                    <li><a href="#">Graduate Programs</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Masters</a></li>
+                            <li><a href="#">Doctorate</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Online Courses</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Admissions</a>
+                <ul class="dropdown">
+                    <li><a href="#">Undergraduate Admissions</a></li>
+                    <li><a href="#">Graduate Admissions</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Departments</a>
+                <ul class="dropdown">
+                    <li><a href="#">Faculty of Arts</a></li>
+                    <li><a href="#">Faculty of Science</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Biology</a></li>
+                            <li><a href="#">Chemistry</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Faculty of Engineering</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Research</a>
+                <ul class="dropdown">
+                    <li><a href="#">Research Centers</a></li>
+                    <li><a href="#">Publications</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Student Services</a>
+                <ul class="dropdown">
+                    <li><a href="#">Counseling Services</a></li>
+                    <li><a href="#">Career Services</a></li>
+                    <li><a href="#">Housing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Events</a>
+                <ul class="dropdown">
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">University Events</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Welcome to the University Dashboard</h1>
+        </div>
+
+        <div id="overview" class="content active">
+            <h2>Overview</h2>
+            <p>This is an overview of university statistics and performance.</p>
+        </div>
+
+        <!-- Additional content sections can be added here -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 University. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

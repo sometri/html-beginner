@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Display Types</title>
+    <style>
+        .block {
+            display: block;
+            background: #e0f7fa;
+            margin: 8px 0;
+            padding: 8px;
+        }
+        .inline {
+            display: inline;
+            background: #ffe082;
+            padding: 4px;
+        }
+        .inline-block {
+            display: inline-block;
+            background: #c5e1a5;
+            padding: 8px;
+            margin: 4px;
+            width: 120px;
+            text-align: center;
+        }
+        .none {
+            display: none;
+        }
+        .flex-container {
+            display: flex;
+            background: #f8bbd0;
+            padding: 8px;
+            gap: 8px;
+        }
+        .flex-item {
+            background: #f06292;
+            padding: 8px;
+            color: #fff;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            background: #b3e5fc;
+            padding: 8px;
+        }
+        .grid-item {
+            background: #0288d1;
+            color: #fff;
+            padding: 8px;
+            text-align: center;
+        }
+        .table {
+            display: table;
+            background: #fff9c4;
+            width: 100%;
+            margin: 8px 0;
+        }
+        .table-row {
+            display: table-row;
+        }
+        .table-cell {
+            display: table-cell;
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Display Types</h1>
+
+    <div class="block">This is a block element (display: block)</div>
+    <span class="inline">Inline element 1 (display: inline)</span>
+    <span class="inline">Inline element 2 (display: inline)</span>
+    <div>
+        <span class="inline-block">Inline-block 1</span>
+        <span class="inline-block">Inline-block 2</span>
+    </div>
+    <div class="none">You can't see me (display: none)</div>
+
+    <div class="flex-container">
+        <div class="flex-item">Flex 1</div>
+        <div class="flex-item">Flex 2</div>
+        <div class="flex-item">Flex 3</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">Grid 1</div>
+        <div class="grid-item">Grid 2</div>
+        <div class="grid-item">Grid 3</div>
+    </div>
+
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell">Table Cell 1</div>
+            <div class="table-cell">Table Cell 2</div>
+            <div class="table-cell">Table Cell 3</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Table Cell 4</div>
+            <div class="table-cell">Table Cell 5</div>
+            <div class="table-cell">Table Cell 6</div>
+        </div>
+    </div>
+</body>
+</html>
