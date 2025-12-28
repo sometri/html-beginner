@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eef;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f0f0f0;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        @media (min-width: 600px) {
+            .content {
+                padding: 40px;
+            }
+            li {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>អ្វីទៅជា Responsive Web Design?</h1>
+    </header>
+    <div class="content">
+        <h2>Responsive Web Design</h2>
+        <p>Responsive Web Design ជាការរចនាគេហទំព័រដែលអាចបង្ហាញ និងដំណើរការបានល្អនៅលើគ្រប់ឧបករណ៍ទាំងអស់ (ទូរស័ព្ទ, Tablet, Desktop)។</p>
+        
+        <h2>បច្ចេកទេសសំខាន់ៗ</h2>
+        <ul>
+            <li><strong>Viewport Meta Tag:</strong> ប្រាប់ Browser ឲ្យបង្ហាញគេហទំព័រតាមទទឹងជាក់ស្តែងរបស់ឧបករណ៍។</li>
+            <li><strong>Media Queries:</strong> អនុវត្ត Style ផ្សេងៗគ្នាទៅតាមលក្ខខណ្ឌ (ទំហំអេក្រង់)។</li>
+            <li><strong>Flexbox ឬ Grid:</strong> រៀបចំប្លង់ដែលបត់បែនបាន។</li>
+        </ul>
+    </div>
+</body>
+</html>

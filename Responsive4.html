@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .technique {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .technique {
+                flex: 1;
+                margin: 10px;
+                min-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>អ្វីទៅជា Responsive Web Design?</h1>
+    </header>
+    <div class="container">
+        <div class="technique">
+            <h2>Responsive Web Design</h2>
+            <p>ជាការរចនាគេហទំព័រដែលអាចបង្ហាញ និងដំណើរការបានល្អនៅលើគ្រប់ឧបករណ៍ទាំងអស់ (ទូរស័ព្ទ, Tablet, Desktop)។</p>
+        </div>
+        <div class="technique">
+            <h2>បច្ចេកទេស</h2>
+            <ul>
+                <li><strong>Viewport Meta Tag:</strong> សម្រាប់ប្រាប់ Browser ឲ្យបង្ហាញគេហទំព័រតាមទទឹងជាក់ស្តែងរបស់ឧបករណ៍។</li>
+                <li><strong>Media Queries:</strong> ដើម្បីអនុវត្ត Style ផ្សេងៗគ្នាទៅតាមលក្ខខណ្ឌ (ឧទាហរណ៍ ទំហំអេក្រង់)។</li>
+                <li><strong>Flexbox ឬ Grid:</strong> សម្រាប់រៀបចំប្លង់ដែលបត់បែនបាន។</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
