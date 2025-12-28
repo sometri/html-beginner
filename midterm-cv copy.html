@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ប្រវត្តិរូបសង្ខេប</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin: 20px 0;
+            padding: 10px;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+        }
+        p {
+            margin: 15px 0;
+            padding: 10px;
+            max-width: 600px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .skill {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            max-width: 500px; /* Limit the width of the table */
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>ប្រវត្តិរូបសង្ខេប</h1>
+    <p>សូមស្វាគមន៍! ខ្ញុំជាអ្នកអភិវឌ្ឍន៍វេបសាយដែលមានបទពិសោធន៍ក្នុងការបង្កើតគេហទំព័រដែលឆ្លើយតបនឹងតម្រូវការរបស់អតិថិជន។</p>
+    
+    <h2>ជំនាញ</h2>
+    <div class="skills">
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">PHP</div>
+        <div class="skill">React</div>
+    </div>
+
+    <h2>បទពិសោធន៍ការងារ</h2>
+    <table>
+        <tr>
+            <th>កន្លែងធ្វើការ</th>
+            <th>មុខតំណែង</th>
+            <th>ឆ្នាំ</th>
+        </tr>
+        <tr>
+            <td>ក្រុមហ៊ុន ABC</td>
+            <td>អ្នកអភិវឌ្ឍន៍វេបសាយ</td>
+            <td>2020-2022</td>
+        </tr>
+        <tr>
+            <td>ក្រុមហ៊ុន XYZ</td>
+            <td>អ្នកជំនួយអភិវឌ្ឍន៍</td>
+            <td>2019-2020</td>
+        </tr>
+    </table>
+
+    <h2>ទំនាក់ទំនង</h2>
+    <form>
+        <label for="name">ឈ្មោះ:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">អ៊ីមែល:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <input type="submit" value="ផ្ញើរ">
+    </form>
+</body>
+</html>

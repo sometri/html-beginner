@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Menu</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+            margin: 0;
+        }
+
+        .menu {
+            position: relative;
+            width: 200px; /* Increased width for more icons */
+            height: 200px; /* Increased height for more icons */
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .middle-icon {
+            z-index: 1;
+            background-color: #FFD700; /* Fresh middle icon color */
+            color: white; /* Middle icon text color */
+        }
+
+        .hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .icon:hover {
+            background-color: #0056b3; /* Change color on hover for all icons */
+            color: white; /* Change icon color on hover */
+        }
+
+        .middle-icon:hover {
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        /* Position icons in a circular layout */
+        .icon:nth-child(2) { transform: rotate(0deg) translate(80px) rotate(0deg); }
+        .icon:nth-child(3) { transform: rotate(45deg) translate(80px) rotate(-45deg); }
+        .icon:nth-child(4) { transform: rotate(90deg) translate(80px) rotate(-90deg); }
+        .icon:nth-child(5) { transform: rotate(135deg) translate(80px) rotate(-135deg); }
+        .icon:nth-child(6) { transform: rotate(180deg) translate(80px) rotate(-180deg); }
+        .icon:nth-child(7) { transform: rotate(225deg) translate(80px) rotate(-225deg); }
+        .icon:nth-child(8) { transform: rotate(270deg) translate(80px) rotate(-270deg); }
+        .icon:nth-child(9) { transform: rotate(315deg) translate(80px) rotate(-315deg); }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="icon middle-icon" onclick="toggleMenu()">❤️</div> <!-- Middle icon -->
+        <div class="icon hidden">🌐</div>
+        <div class="icon hidden">📞</div>
+        <div class="icon hidden">✉️</div>
+        <div class="icon hidden">📺</div>
+        <div class="icon hidden">📸</div>
+        <div class="icon hidden">💼</div> <!-- New icons -->
+        <div class="icon hidden">🎨</div>
+        <div class="icon hidden">🎵</div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const icons = document.querySelectorAll('.menu .icon:not(.middle-icon)');
+            icons.forEach(icon => {
+                icon.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

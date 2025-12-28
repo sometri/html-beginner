@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Properties Examples</title>
+    <style>
+        body {
+            display: flex;                      /* Use Flexbox for layout */
+            flex-direction: column;             /* Stack sections vertically */
+            align-items: center;                /* Center sections horizontally */
+            font-family: Arial, sans-serif;     /* Font styling */
+            background-color: #f0f0f0;         /* Light gray background */
+            padding: 20px;
+        }
+
+        .section {
+            margin: 20px 0;                    /* Space between sections */
+            padding: 20px;
+            background-color: #007BFF;         /* Section background */
+            color: white;                       /* Text color */
+            border-radius: 10px;               /* Rounded corners */
+            width: 300px;                      /* Fixed width for sections */
+        }
+
+        /* Flexbox Direction */
+        .flex-direction {
+            display: flex;                      /* Enable Flexbox */
+            flex-direction: row;               /* Arrange items in a row */
+            justify-content: space-between;     /* Space items evenly */
+        }
+
+        /* Justify Content */
+        .justify-content {
+            display: flex;                      /* Enable Flexbox */
+            justify-content: center;            /* Center items horizontally */
+        }
+
+        /* Align Items */
+        .align-items {
+            display: flex;                      /* Enable Flexbox */
+            align-items: flex-start;           /* Align items to the start */
+            height: 100px;                     /* Fixed height for alignment */
+        }
+
+        /* Flex Wrap */
+        .flex-wrap {
+            display: flex;                      /* Enable Flexbox */
+            flex-wrap: wrap;                   /* Allow items to wrap */
+            width: 300px;                      /* Fixed width for container */
+        }
+
+        /* Align Content */
+        .align-content {
+            display: flex;                      /* Enable Flexbox */
+            flex-wrap: wrap;                   /* Allow items to wrap */
+            align-content: space-between;       /* Space between lines */
+            height: 200px;                     /* Fixed height for alignment */
+        }
+
+        /* Common Item Styles */
+        .flex-item {
+            background-color: #FFFFFF;        /* Item background */
+            margin: 5px;                      /* Space between items */
+            padding: 20px;                    /* Internal padding */
+            text-align: center;                /* Center text */
+            border-radius: 5px;               /* Rounded corners */
+            flex: 1 0 80px;                   /* Flex-grow, flex-shrink, flex-basis */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex Direction Example -->
+    <div class="section">
+        <h2>Flex Direction: Row</h2>
+        <div class="flex-direction">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Justify Content Example -->
+    <div class="section">
+        <h2>Justify Content: Center</h2>
+        <div class="justify-content">
+            <div class="flex-item">Item A</div>
+            <div class="flex-item">Item B</div>
+        </div>
+    </div>
+
+    <!-- Align Items Example -->
+    <div class="section">
+        <h2>Align Items: Flex Start</h2>
+        <div class="align-items">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Flex Wrap Example -->
+    <div class="section">
+        <h2>Flex Wrap: Wrap</h2>
+        <div class="flex-wrap">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+            <div class="flex-item">Item 5</div>
+        </div>
+    </div>
+
+    <!-- Align Content Example -->
+    <div class="section">
+        <h2>Align Content: Space Between</h2>
+        <div class="align-content">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+            <div class="flex-item">Item 5</div>
+        </div>
+    </div>
+</body>
+</html>

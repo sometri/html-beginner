@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .flex-container {
+            display: flex;                      /* Enable Flexbox */
+            flex-wrap: wrap;                   /* Allow items to wrap */
+            width: 300px;                      /* Set a fixed width for the container */
+            background-color: #007BFF;        /* Background color */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .flex-item {
+            background-color: #FFFFFF;        /* Background for items */
+            margin: 5px;                      /* Space between items */
+            padding: 20px;                    /* Internal padding */
+            text-align: center;                /* Center text */
+            border-radius: 5px;               /* Rounded corners */
+            flex: 1 0 100px;                  /* Flex-grow, flex-shrink, flex-basis */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+    </div>
+</body>
+</html>

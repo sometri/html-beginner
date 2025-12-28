@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Example</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #007BFF;
+            transition: all 0.3s ease; /* Transition for all properties */
+        }
+
+        /* Transition for background color */
+        .color-transition:hover {
+            background-color: #FF5733; /* Change background color on hover */
+        }
+
+        /* Transition for scale */
+        .scale-transition:hover {
+            transform: scale(1.2); /* Scale up on hover */
+        }
+
+        /* Transition for rotation */
+        .rotate-transition:hover {
+            transform: rotate(45deg); /* Rotate on hover */
+        }
+
+        /* Transition for opacity */
+        .opacity-transition {
+            opacity: 1; /* Fully visible */
+        }
+
+        .opacity-transition:hover {
+            opacity: 0.5; /* Change opacity on hover */
+        }
+
+        /* Transition for position */
+        .translate-transition {
+            transform: translateY(0); /* Start position */
+        }
+
+        .translate-transition:hover {
+            transform: translateY(-20px); /* Move up on hover */
+        }
+
+        /* Transition for border */
+        .border-transition {
+            border: 2px solid transparent; /* Initial border */
+        }
+
+        .border-transition:hover {
+            border: 2px solid #FF5733; /* Change border color on hover */
+        }
+
+        /* Container for transitions */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            gap: 20px; /* Space between boxes */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transitions Examples</h1>
+    <div class="container">
+        <div class="box color-transition"></div>
+        <div class="box scale-transition"></div>
+        <div class="box rotate-transition"></div>
+        <div class="box opacity-transition"></div>
+        <div class="box translate-transition"></div>
+        <div class="box border-transition"></div>
+    </div>
+</body>
+</html>
